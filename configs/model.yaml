@@ -1,0 +1,14 @@
+model:
+  encoder:
+    stage1: sam_like
+    compressor: conv_2layer_16x
+    stage2: clip_like
+  decoder:
+    type: lm
+    moe: false
+training:
+  seq_len: 4096
+  batch_size: 8
+  lr: 5.0e-5
+modes:
+  default: base

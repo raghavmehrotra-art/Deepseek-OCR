@@ -1,0 +1,7 @@
+datasets:
+  icdar13:
+    images: data/sample_images
+    annotations: null
+  custom:
+    images: data/sample_images
+    annotations: null

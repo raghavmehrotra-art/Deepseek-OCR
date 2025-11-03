@@ -1,0 +1,16 @@
+tiny:
+  input_size: [512, 512]
+  tokens: 64
+small:
+  input_size: [640, 640]
+  tokens: 100
+base:
+  input_size: [1024, 1024]
+  tokens: 256
+large:
+  input_size: [1280, 1280]
+  tokens: 400
+gundam:
+  local_tile: [640, 640]
+  global_view: [1024, 1024]
+  max_tiles: 9
