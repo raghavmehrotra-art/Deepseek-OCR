@@ -5,7 +5,7 @@
 
 A research implementation of **DeepSeek-OCR** based on the paper ["DeepSeek-OCR: Contexts Optical Compression"](https://arxiv.org/abs/2510.18234). This project explores OCR as a compression-decompression task using vision-language models.
 
-## 🎯 Overview
+## Overview
 
 DeepSeek-OCR compresses text-rich images into compact vision tokens, then decodes them back to text using a language model. Key features:
 
@@ -26,7 +26,7 @@ Image → DeepEncoder (SAM-like → Compressor 16× → CLIP-like) → LM Decode
 
 See [ARCHITECTURE.md](ARCHITECTURE.md) for detailed explanation.
 
-## 📦 Installation
+## Installation
 
 ### Requirements
 
@@ -66,7 +66,7 @@ pip install paddleocr
 pip install gradio
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Inference
 
@@ -125,7 +125,7 @@ python demo/app.py --checkpoint path/to/model.pt --port 7860
 # Access at http://localhost:7860
 ```
 
-## 📊 Evaluation
+## Evaluation
 
 ### Prepare Dataset
 
@@ -219,7 +219,7 @@ python scripts/train_ocr.py \
 
 **Note**: This implementation provides the architecture. Training requires large-scale data and compute similar to the paper (20 nodes × 8 A100-40G).
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Deepseek-OCR/
@@ -257,7 +257,7 @@ Deepseek-OCR/
     └── ARCHITECTURE.md
 ```
 
-## 🎓 Paper Summary
+## Paper Summary
 
 ### Key Contributions
 
@@ -284,7 +284,7 @@ Deepseek-OCR/
 }
 ```
 
-## 🔬 Implementation Notes
+## Implementation Notes
 
 ### Differences from Paper
 
@@ -305,7 +305,7 @@ This is a **research-friendly implementation** that maintains architectural fide
 3. **Modular Design**: Easy to swap components (e.g., upgrade to larger decoder)
 4. **Fallbacks**: Simple implementations when optional deps (timm, HF) unavailable
 
-## 🛠️ Development
+## Development
 
 ### Testing
 
@@ -332,7 +332,7 @@ stage1 = SAMLikeStage(
 )
 ```
 
-## 📚 Resources
+## Resources
 
 - **Paper**: [arXiv:2510.18234](https://arxiv.org/abs/2510.18234)
 - **Official Repo**: [deepseek-ai/DeepSeek-OCR](https://github.com/deepseek-ai/DeepSeek-OCR)
@@ -342,7 +342,7 @@ stage1 = SAMLikeStage(
   - [Vary](https://arxiv.org/abs/2312.06109) - Vision vocabulary
   - [InternVL](https://arxiv.org/abs/2404.16821) - Multi-resolution VLM
 
-## 🤝 Contributing
+## Contributing
 
 Contributions welcome! Areas:
 
@@ -353,11 +353,11 @@ Contributions welcome! Areas:
 - [ ] MoE decoder integration
 - [ ] More baseline comparisons
 
-## 📄 License
+## License
 
 MIT License. See [LICENSE](LICENSE) for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - DeepSeek AI team for the original paper and research
 - HuggingFace for transformers library
@@ -367,3 +367,8 @@ MIT License. See [LICENSE](LICENSE) for details.
 ---
 
 **Note**: This is a research implementation for educational purposes. For production use, consider the [official DeepSeek-OCR model](https://huggingface.co/deepseek-ai/DeepSeek-OCR) or training on large-scale data
+
+
+Star this repo if you find it useful :)
+
+Follow me on [X (Twitter)](https://www.x.com/techwith_ram)
